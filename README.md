@@ -90,7 +90,7 @@ if [ -f "$OLD_CHECKSUM_FILE" ]; then
             case $SERVICE in
                 "app")
                     echo "🚀 Baue und pushe Backend (app)..."
-                    docker-compose build app
+                    docker-compose build app_backend
                     docker push ghcr.io/ra1n-42/miwi/app_backend:latest
                     ;;
                 "frontend")
